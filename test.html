@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz-O-Mania</title>
+    <link rel="icon" href="assets/images/img_238906.png">
+    <link rel="stylesheet" href="assets/bootstrap-4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script src="assets/js/utils/firebase.js"></script>
+    <script src="assets/js/controller/test.js"></script>
+    <script src="assets/js/utils/config.js"></script>
+    <script src="assets/js/utils/config1.js"></script>
+</head>
+
+<body>
+    <div id="container1">
+        <div id="main1" class="">
+            <h1 id="testh">Welcome</h1>
+            <div class="bttn">
+                <button id="logout">LogOut</button>
+            </div>
+        </div>
+        <div id="instrctn" class="">
+            <h5>Instructions</h5>
+            <span>1. Clearly mention the language, appropriate name and total no.of questions in the test</span><br>
+            <span>2. Each question carries 10 marks.</span><br>
+            <span>3. Use HTML Entities while writing questions and options</span><br>
+        </div>
+        <div id="createTest" class="">
+            <button id="create">Create Test</button>
+        </div>
+        <div id="addDiv" class="hide">
+            <h4>About the Test</h4>
+            <div class="logcontent">
+                <div class="form-group">
+                    <label>Language</label>
+                    <input type="text" class="form-control" placeholder="Type the language" id="language">
+                    <span id="req1" class="hide red">**Required</span>
+                </div>
+                <div class="form-group">
+                    <label>Name of Test</label>
+                    <input type="text" id="not" class="form-control" placeholder="Enter the name of test">
+                    <span id="req2" class="hide red">**Required</span>
+                </div>
+                <div class="form-group">
+                    <label>Total No.of Questions</label>
+                    <input type="text" id="tnoq" class="form-control" placeholder="Total No.of Questions">
+                    <span id="req3" class="hide red">**Required</span>
+                </div>
+                <div class="form-group center">
+                    <button class="btn btn-danger" id="ct">Create Test</button>
+                </div>
+            </div>
+        </div>
+        <div id="quesDiv" class="hide">
+            <span class="qs">-->Fields cannot be left empty</span>
+            <br>
+            <span class="qs">-->Answer should match any of the given options</span>
+            <br>
+            <br>
+            <label>Question:
+                <span id="qno"></span>
+            </label>
+            <br>
+            <textarea placeholder="Type Question" cols="30" rows="5" id="question">
+            </textarea>
+            <br>
+            <label for="">Options:</label>
+            <br>
+            <input type="text" placeholder="Type Option1" id="op1">
+            <input type="text" placeholder="Type Option2" id="op2">
+            <input type="text" placeholder="Type Option3" id="op3">
+            <input type="text" placeholder="Type Option4" id="op4">
+            <br>
+            <label for="">Answer</label>
+            <br>
+            <input type="text" placeholder="Type Answer" id="ans">
+            <br>
+            <br>
+            <button id="addbtn">Add Question</button>
+        </div>
+        <div id="endTest" class="hide">
+            <h3>Thank You</h3>
+            <h4>You successfully created the Test</h4>
+            <button id="next">Next Test</button><br>
+            <button id="end">End</button><br>
+            <button id="logou">LogOut</button>
+        </div>
+        <div id="footer">
+            <p class="copyright-w3ls">©2018 TestStreet. All Rights Reserved | Design by Meghal Singhal</p>
+        </div>
+    </div>
+</body>
+
+</html>

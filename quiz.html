@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz-O-Mania</title>
+    <link rel="icon" href="assets/images/img_238906.png">
+    <link rel="stylesheet" href="assets/bootstrap-4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script src="assets/js/utils/firebase.js"></script>
+    <script src="assets/js/controller/quiz.js"></script>
+    <script src="assets/js/utils/config.js"></script>
+    <script src="assets/js/utils/config1.js"></script>
+</head>
+
+<body>
+    <div id="container2">
+        <div id="main1" class="main12">
+            <h1 id="quizh">Welcome</h1>
+            <div class="bttn">
+                <button id="logout">LogOut</button>
+            </div>
+        </div>
+        <div id="listlang">
+            <ul id="ll">
+            </ul>
+        </div>
+        <div id="listtest">
+            <ul id="lt">
+            </ul>
+        </div>
+        <div id="listQues" class="hide">
+            <p id="Question"></p>
+            <br>
+            <input type="radio" name="option" value="" id="op1">
+            <span id="o1"></span>
+            <br>
+            <input type="radio" name="option" value="" id="op2">
+            <span id="o2"></span>
+            <br>
+            <input type="radio" name="option" value="" id="op3">
+            <span id="o3"></span>
+            <br>
+            <input type="radio" name="option" value="" id="op4">
+            <span id="o4"></span>
+            <br>
+            <button id="sq">Submit</button>
+        </div>
+        <div id="result" class="hide">
+            <div class="result1">
+                <h1 id="pd"></h1>
+            </div>
+            <div class="result2">
+                <span id="incrt"></span>
+                <br>
+                <span id="scans"></span>
+            </div>
+        </div>
+        <div id="footer">
+            <p class="copyright-w3ls">©2018 TestStreet. All Rights Reserved | Design by Meghal Singhal</p>
+        </div>
+    </div>
+</body>
+
+</html>
